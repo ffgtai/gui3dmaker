@@ -72,14 +72,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "CARFLAGUI 3D MINI MAKER STUDIO" },
+      { name: "description", content: "Impressões 3D de alta precisão criadas por quem entende de diversão.
+Maker de 8 anos & Engenheiro do Futuro" },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "CARFLAGUI 3D MINI MAKER STUDIO" },
+      { property: "og:description", content: "Impressões 3D de alta precisão criadas por quem entende de diversão.
+Maker de 8 anos & Engenheiro do Futuro" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "CARFLAGUI 3D MINI MAKER STUDIO" },
+      { name: "twitter:description", content: "Impressões 3D de alta precisão criadas por quem entende de diversão.
+Maker de 8 anos & Engenheiro do Futuro" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1dc5e994-0643-4304-9dbb-808db70a830d/id-preview-f47d14cc--70054d52-9c23-49ed-bed8-9ccc266dcc0d.lovable.app-1778607275534.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1dc5e994-0643-4304-9dbb-808db70a830d/id-preview-f47d14cc--70054d52-9c23-49ed-bed8-9ccc266dcc0d.lovable.app-1778607275534.png" },
     ],
     links: [
       {
