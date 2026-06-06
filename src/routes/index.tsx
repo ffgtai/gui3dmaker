@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import makerPortrait from "@/assets/maker-portrait.jpg";
 import productTrophy from "@/assets/product-trophy.jpg";
 import productDino from "@/assets/product-dino.jpg";
-import productCanarinho from "@/assets/product-canarinho.jpg";
 import productCanarinhoV4 from "@/assets/product-canarinho-v4.jpg";
 import printProcess from "@/assets/print-process.jpg";
 
