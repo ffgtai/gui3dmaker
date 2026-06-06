@@ -3,6 +3,7 @@ import makerPortrait from "@/assets/maker-portrait.jpg";
 import productTrophy from "@/assets/product-trophy.jpg";
 import productDino from "@/assets/product-dino.jpg";
 import productCanarinho from "@/assets/product-canarinho.jpg";
+import productCanarinhoV4 from "@/assets/product-canarinho-v4.jpg";
 import printProcess from "@/assets/print-process.jpg";
 
 export const Route = createFileRoute("/")({
@@ -51,13 +52,24 @@ const products = [
   {
     id: "canarinho",
     title: "Brinquedos Personalizados",
-    desc: "Boneco do Canarinho, mascote da Seleção Brasileira. Outros personagens sob encomenda.",
+    desc: "Boneco do Canarinho Pistola, mascote da Seleção Brasileira. Outros personagens sob encomenda.",
     price: "R$ 40",
     badge: "Sob Medida",
     badgeBg: "bg-accent",
     priceColor: "text-accent",
     img: productCanarinho,
     code: "PROD_003_CANARINHO",
+  },
+  {
+    id: "canarinho-fofinho",
+    title: "Canarinho Fofinho",
+    desc: "Boneco simpático e sorridente do mascote da Seleção Brasileira. Perfeito para decorar o quarto ou presentear.",
+    price: "R$ 40",
+    badge: "Novo",
+    badgeBg: "bg-primary",
+    priceColor: "text-primary",
+    img: productCanarinhoV4,
+    code: "PROD_004_CANARINHO_FOFINHO",
   },
 ];
 
@@ -178,7 +190,7 @@ function Index() {
                 </div>
               </div>
               <div className="font-mono text-[10px] uppercase tracking-widest text-foreground/40">
-                Filtrando 3 de 12 objetos ativos
+                Filtrando 4 de 12 objetos ativos
               </div>
             </div>
 
