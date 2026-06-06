@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import makerPortrait from "@/assets/maker-portrait.jpg";
 import productTrophy from "@/assets/product-trophy.jpg";
 import productDino from "@/assets/product-dino.jpg";
-import productCanarinho from "@/assets/product-canarinho.jpg";
 import productCanarinhoV4 from "@/assets/product-canarinho-v4.jpg";
 import printProcess from "@/assets/print-process.jpg";
 
@@ -48,17 +47,6 @@ const products = [
     priceColor: "text-secondary",
     img: productDino,
     code: "PROD_002_DINO",
-  },
-  {
-    id: "canarinho",
-    title: "Brinquedos Personalizados",
-    desc: "Boneco do Canarinho Pistola, mascote da Seleção Brasileira. Outros personagens sob encomenda.",
-    price: "R$ 40",
-    badge: "Sob Medida",
-    badgeBg: "bg-accent",
-    priceColor: "text-accent",
-    img: productCanarinho,
-    code: "PROD_003_CANARINHO",
   },
   {
     id: "canarinho-fofinho",
@@ -190,7 +178,7 @@ function Index() {
                 </div>
               </div>
               <div className="font-mono text-[10px] uppercase tracking-widest text-foreground/40">
-                Filtrando 4 de 12 objetos ativos
+                Filtrando 3 de 12 objetos ativos
               </div>
             </div>
 
@@ -357,16 +345,29 @@ function Index() {
               MiniMaker Studio © 2026
             </span>
           </div>
-          <div className="flex gap-8 text-[10px] font-mono uppercase tracking-widest text-foreground/40">
-            <a href="#" className="hover:text-primary">
-              Instagram
-            </a>
-            <a href="#" className="hover:text-primary">
-              Youtube
-            </a>
-            <a href="#" className="hover:text-primary">
-              Termos
-            </a>
+          <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-center text-[10px] font-mono uppercase tracking-widest text-foreground/40">
+            <span>
+              Site desenvolvido por{" "}
+              <a
+                href="https://ffgtai.github.io/ffgdigital/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors underline underline-offset-2"
+              >
+                FFG Digital
+              </a>
+            </span>
+            <div className="flex gap-8">
+              <a href="#" className="hover:text-primary">
+                Instagram
+              </a>
+              <a href="#" className="hover:text-primary">
+                Youtube
+              </a>
+              <a href="#" className="hover:text-primary">
+                Termos
+              </a>
+            </div>
           </div>
         </div>
       </footer>
