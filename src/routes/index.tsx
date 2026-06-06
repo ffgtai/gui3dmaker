@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import makerPortrait from "@/assets/maker-portrait.jpg";
 import productTrophy from "@/assets/product-trophy.jpg";
 import productDino from "@/assets/product-dino.jpg";
-import productKeychain from "@/assets/product-keychain.jpg";
+import productCanarinho from "@/assets/product-canarinho.jpg";
 import printProcess from "@/assets/print-process.jpg";
 
 export const Route = createFileRoute("/")({
@@ -39,7 +39,7 @@ const products = [
   },
   {
     id: "dino",
-    title: "T-Rex Flexível",
+    title: "Brinquedos Articulados",
     desc: "O brinquedo favorito! Todas as articulações se movem de verdade.",
     price: "R$ 35",
     badge: "Articulado",
@@ -49,15 +49,15 @@ const products = [
     code: "PROD_002_DINO",
   },
   {
-    id: "key",
-    title: "Chaveiro Personalizado",
-    desc: "Escolha o nome e a cor. Perfeito para mochilas escolares.",
-    price: "R$ 15",
+    id: "canarinho",
+    title: "Brinquedos Personalizados",
+    desc: "Boneco do Canarinho, mascote da Seleção Brasileira. Outros personagens sob encomenda.",
+    price: "R$ 40",
     badge: "Sob Medida",
     badgeBg: "bg-accent",
     priceColor: "text-accent",
-    img: productKeychain,
-    code: "PROD_003_NAME",
+    img: productCanarinho,
+    code: "PROD_003_CANARINHO",
   },
 ];
 
