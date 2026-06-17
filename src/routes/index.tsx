@@ -8,13 +8,13 @@ import printProcess from "@/assets/print-process.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "MiniMaker Studio — Impressões 3D Copa 2026 e Brinquedos" },
+      { title: "Gui 3D Maker — Impressões 3D Copa 2026 e Brinquedos" },
       {
         name: "description",
         content:
           "Miniaturas, figurinhas da Copa 2026 e brinquedos divertidos impressos em 3D por um maker de 8 anos. Encomende pelo WhatsApp.",
       },
-      { property: "og:title", content: "MiniMaker Studio — Impressões 3D Copa 2026" },
+      { property: "og:title", content: "Gui 3D Maker — Impressões 3D Copa 2026" },
       {
         property: "og:description",
         content: "Coleção exclusiva da Copa 2026 e brinquedos personalizados em 3D.",
@@ -72,7 +72,7 @@ function Index() {
               3D
             </div>
             <span className="font-extrabold tracking-tighter text-xl uppercase">
-              MiniMaker Studio
+              Gui 3D Maker
             </span>
           </Link>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-wider">
@@ -342,7 +342,7 @@ function Index() {
               3D
             </div>
             <span className="font-bold tracking-tighter uppercase text-sm">
-              MiniMaker Studio © 2026
+              Gui 3D Maker © 2026
             </span>
           </div>
           <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-center text-[10px] font-mono uppercase tracking-widest text-foreground/40">
