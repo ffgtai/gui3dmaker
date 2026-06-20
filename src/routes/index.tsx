@@ -235,7 +235,7 @@ function Index() {
               </div>
               <div className="order-1 lg:order-2">
                 <h2 className="text-4xl font-extrabold tracking-tighter uppercase mb-6">
-                  A história por trás da máquina
+                  A história por trás da impressora 3D
                 </h2>
                 <p className="text-lg opacity-80 leading-relaxed mb-6">
                   Tudo começou com o gosto de brincar com peças de montar, aos
