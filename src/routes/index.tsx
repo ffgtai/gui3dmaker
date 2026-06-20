@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import makerPortrait from "@/assets/maker-portrait.jpg";
+import gui3dmakerImg from "@/assets/gui3dmaker.png.asset.json";
 import productTrophy from "@/assets/product-trophy.jpg";
 import productDino from "@/assets/product-dino.jpg";
 import productCanarinhoV4 from "@/assets/product-canarinho-v4.jpg";
@@ -19,7 +19,7 @@ export const Route = createFileRoute("/")({
         property: "og:description",
         content: "Coleção exclusiva da Copa 2026 e brinquedos personalizados em 3D.",
       },
-      { property: "og:image", content: makerPortrait },
+      { property: "og:image", content: gui3dmakerImg.url },
     ],
   }),
   component: Index,
@@ -131,8 +131,8 @@ function Index() {
               <div className="relative animate-slide [animation-delay:200ms]">
                 <div className="w-full aspect-square bg-stone-200 rounded-[2rem] overflow-hidden ring-8 ring-card shadow-2xl">
                   <img
-                    src={makerPortrait}
-                    alt="Pedro, o jovem maker de 8 anos, ao lado de sua impressora 3D"
+                    src={gui3dmakerImg.url}
+                    alt="Gui, o jovem maker de 8 anos, ao lado de sua impressora 3D"
                     width={1024}
                     height={1024}
                     className="w-full h-full object-cover"
