@@ -238,15 +238,22 @@ function Index() {
                   A história por trás da máquina
                 </h2>
                 <p className="text-lg opacity-80 leading-relaxed mb-6">
-                  Tudo começou quando ganhei minha primeira impressora aos 7
-                  anos. O que era curiosidade virou paixão. Hoje, com 8 anos, eu
-                  mesmo preparo os arquivos, troco o filamento e cuido de cada
+                  Tudo começou com o gosto de brincar com peças de montar, aos
+                  6 anos participei de um curso de robótica na escola, depois
+                  passei a assistir vídeos de impressão 3D, o que era
+                  curiosidade virou paixão, foi aí que resolvi pegar as minhas
+                  economias que venho juntando e pedi aos meus pais para me
+                  ajudar a comprar uma impressora 3D.
+                </p>
+                <p className="text-lg opacity-80 leading-relaxed mb-8">
+                  Com a chegada da impressora, fomos aprendendo a utilizá-la e
+                  agora preparo os arquivos, troco o filamento e cuido de cada
                   detalhe da produção.
                 </p>
                 <p className="text-lg opacity-80 leading-relaxed mb-8">
-                  Meu objetivo é mostrar que crianças também podem ser
-                  criadoras e empreendedoras. Cada peça que você compra ajuda a
-                  financiar novos projetos e cores de filamentos!
+                  Meu objetivo é mostrar que crianças também podem ser criativas
+                  e empreendedoras. Cada peça que você compra ajuda a financiar
+                  novos projetos!
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="p-4 rounded-xl border border-white/10 bg-white/5">
