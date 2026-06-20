@@ -328,7 +328,7 @@ function Index() {
               meu WhatsApp.
             </p>
             <a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5513997262626"
               target="_blank"
               rel="noopener noreferrer"
               className="relative inline-flex items-center gap-3 px-10 py-5 bg-card text-primary rounded-2xl font-extrabold text-xl hover:scale-105 transition-transform"
