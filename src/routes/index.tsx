@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import gui3dmakerImg from "@/assets/gui3dmaker.png.asset.json";
 import productTrophy from "@/assets/taca-copa.jpg.asset.json";
 import productDino from "@/assets/snake.jpg.asset.json";
-import productCanarinhoV4 from "@/assets/chaveiro-taca.jpg.asset.json";
+import productCanarinhoV4 from "@/assets/chaveiro-taca-v2.jpg.asset.json";
 import printProcess from "@/assets/print-process.jpg";
 
 export const Route = createFileRoute("/")({
@@ -51,7 +51,7 @@ const products = [
   {
     id: "canarinho-fofinho",
     title: "Chaveiro Taça da Copa",
-    desc: "Chaveiro Taça da Copa. Entre no clima da Copa.",
+    desc: "Entre no clima da Copa 2026",
     price: "R$ 12",
     badge: "Novo",
     badgeBg: "bg-primary",
