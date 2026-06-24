@@ -29,7 +29,7 @@ const products = [
   {
     id: "copa",
     title: "Taça Copa 2026",
-    desc: "Impressão em PLA com acabamento metalizado dourado (tamanho 23,8cm)."
+    desc: "Impressão em PLA com acabamento metalizado dourado (tamanho 23,8cm).",
     price: "R$ 70",
     badge: "Edição Limitada",
     badgeBg: "bg-primary",
