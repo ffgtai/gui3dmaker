@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import gui3dmakerImg from "@/assets/gui3dmaker.png.asset.json";
-import productTrophy from "@/assets/product-trophy.jpg";
-import productDino from "@/assets/product-dino.jpg";
-import productCanarinhoV4 from "@/assets/product-canarinho-v4.jpg";
+import productTrophy from "@/assets/taca-copa.jpg.asset.json";
+import productDino from "@/assets/snake.jpg.asset.json";
+import productCanarinhoV4 from "@/assets/chaveiro-taca.jpg.asset.json";
 import printProcess from "@/assets/print-process.jpg";
 
 export const Route = createFileRoute("/")({
@@ -28,35 +28,35 @@ export const Route = createFileRoute("/")({
 const products = [
   {
     id: "copa",
-    title: "Mini Taça Copa 2026",
-    desc: "Impressão em PLA de alta resistência com acabamento metalizado dourado.",
-    price: "R$ 45",
+    title: "Taça Copa 2026",
+    desc: "Impressão em PLA com acabamento metalizado dourado.",
+    price: "R$ 70",
     badge: "Edição Limitada",
     badgeBg: "bg-primary",
     priceColor: "text-primary",
-    img: productTrophy,
+    img: productTrophy.url,
     code: "PROD_001_COPA",
   },
   {
     id: "dino",
-    title: "Brinquedos Articulados",
-    desc: "O brinquedo favorito! Todas as articulações se movem de verdade.",
-    price: "R$ 35",
-    badge: "Articulado",
+    title: "Brinquedo Sensorial (Snake)",
+    desc: "O brinquedo sensorial Snake você consegue movimentar ele e é ideal para as crianças!",
+    price: "R$ 15",
+    badge: "Sensorial",
     badgeBg: "bg-secondary",
     priceColor: "text-secondary",
-    img: productDino,
+    img: productDino.url,
     code: "PROD_002_DINO",
   },
   {
     id: "canarinho-fofinho",
-    title: "Canarinho Fofinho",
-    desc: "Boneco simpático e sorridente do mascote da Seleção Brasileira. Perfeito para decorar o quarto ou presentear.",
-    price: "R$ 40",
+    title: "Chaveiro Taça da Copa",
+    desc: "Chaveiro Taça da Copa. Entre no clima da Copa.",
+    price: "R$ 12",
     badge: "Novo",
     badgeBg: "bg-primary",
     priceColor: "text-primary",
-    img: productCanarinhoV4,
+    img: productCanarinhoV4.url,
     code: "PROD_004_CANARINHO_FOFINHO",
   },
 ];
