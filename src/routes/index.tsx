@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import gui3dmakerImg from "@/assets/gui3dmaker.png.asset.json";
 import productTrophy from "@/assets/taca-copa.jpg.asset.json";
 import productDino from "@/assets/snake.jpg.asset.json";
-import productCanarinhoV4 from "@/assets/chaveiro-taca-v2.jpg.asset.json";
+import productCanarinhoV4 from "@/assets/chaveiro-taca-v3.jpg.asset.json";
 import printProcess from "@/assets/print-process.jpg";
 
 export const Route = createFileRoute("/")({
