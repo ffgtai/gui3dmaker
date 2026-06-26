@@ -3,7 +3,7 @@ import gui3dmakerImg from "@/assets/gui3dmaker.png.asset.json";
 import productTrophy from "@/assets/taca-copa.jpg.asset.json";
 import productDino from "@/assets/snake.jpg.asset.json";
 import productCanarinhoV4 from "@/assets/chaveiro-taca-v4.jpg.asset.json";
-import productKeychainName from "@/assets/chaveiro-nome.jpg.asset.json";
+import productKeychainName from "@/assets/chaveiro-nome-guilherme.jpg.asset.json";
 import printProcess from "@/assets/print-process.jpg";
 
 export const Route = createFileRoute("/")({
