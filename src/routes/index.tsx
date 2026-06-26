@@ -52,7 +52,7 @@ const products = [
     id: "canarinho-fofinho",
     title: "Chaveiro Taça da Copa",
     desc: "Entre no clima da Copa 2026",
-    price: "R$ 12",
+    price: "R$ 15",
     badge: "Novo",
     badgeBg: "bg-primary",
     priceColor: "text-primary",
