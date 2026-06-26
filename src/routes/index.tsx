@@ -77,6 +77,7 @@ const products = [
     badgeBg: "bg-accent",
     priceColor: "text-accent",
     img: productKeychainName.url,
+    images: [productKeychainName.url, productKeychainNameAlt.url],
     code: "PROD_005_KEYCHAIN_NAME",
   },
 ];
