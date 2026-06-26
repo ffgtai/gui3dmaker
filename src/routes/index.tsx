@@ -60,6 +60,17 @@ const products = [
     img: productCanarinhoV4.url,
     code: "PROD_004_CANARINHO_FOFINHO",
   },
+  {
+    id: "chaveiro-nome",
+    title: "Chaveiro Personalizado",
+    desc: "Personalize com o seu nome ou de alguém que você quer presentear.",
+    price: "R$ 15",
+    badge: "Personalizado",
+    badgeBg: "bg-accent",
+    priceColor: "text-accent",
+    img: productKeychainName.url,
+    code: "PROD_005_KEYCHAIN_NAME",
+  },
 ];
 
 function Index() {
