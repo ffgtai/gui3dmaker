@@ -63,7 +63,7 @@ const products = [
   {
     id: "chaveiro-nome",
     title: "Chaveiro Personalizado",
-    desc: "Personalize com o seu nome ou de alguém que você quer presentear.",
+    desc: "Entre em contato e peça o seu, acabei de criar o meu!",
     price: "R$ 15",
     badge: "Personalizado",
     badgeBg: "bg-accent",
