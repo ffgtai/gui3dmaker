@@ -3,6 +3,7 @@ import gui3dmakerImg from "@/assets/gui3dmaker.png.asset.json";
 import productTrophy from "@/assets/taca-copa.jpg.asset.json";
 import productDino from "@/assets/snake.jpg.asset.json";
 import productCanarinhoV4 from "@/assets/chaveiro-taca-v4.jpg.asset.json";
+import productKeychainName from "@/assets/chaveiro-nome.jpg.asset.json";
 import printProcess from "@/assets/print-process.jpg";
 
 export const Route = createFileRoute("/")({
@@ -58,6 +59,17 @@ const products = [
     priceColor: "text-primary",
     img: productCanarinhoV4.url,
     code: "PROD_004_CANARINHO_FOFINHO",
+  },
+  {
+    id: "chaveiro-nome",
+    title: "Chaveiro Personalizado",
+    desc: "Personalize com o seu nome ou de alguém que você quer presentear.",
+    price: "R$ 15",
+    badge: "Personalizado",
+    badgeBg: "bg-accent",
+    priceColor: "text-accent",
+    img: productKeychainName.url,
+    code: "PROD_005_KEYCHAIN_NAME",
   },
 ];
 
@@ -178,7 +190,7 @@ function Index() {
                 </div>
               </div>
               <div className="font-mono text-[10px] uppercase tracking-widest text-foreground/40">
-                Filtrando 3 de 12 objetos ativos
+                Filtrando 4 de 12 objetos ativos
               </div>
             </div>
 
