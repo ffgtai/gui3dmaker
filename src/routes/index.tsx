@@ -226,7 +226,7 @@ function Index() {
                 </div>
               </div>
               <div className="font-mono text-[10px] uppercase tracking-widest text-foreground/40">
-                Filtrando 4 de 12 objetos ativos
+                Filtrando {products.length} de 12 objetos ativos
               </div>
             </div>
 
