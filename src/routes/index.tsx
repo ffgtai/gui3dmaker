@@ -64,6 +64,17 @@ const products = [
     code: "PROD_004_CANARINHO_FOFINHO",
   },
   {
+    id: "chaveiro-paolla",
+    title: "Chaveiros Personalizados",
+    desc: "Entre em contato e peça o seu, acabei de criar o meu!",
+    price: "R$ 15",
+    badge: "Personalizado",
+    badgeBg: "bg-accent",
+    priceColor: "text-accent",
+    img: productKeychainPaolla.url,
+    code: "PROD_008_KEYCHAIN_PAOLLA",
+  },
+  {
     id: "chaveiro-guilherme",
     title: "Chaveiros Personalizados",
     desc: "Entre em contato e peça o seu, acabei de criar o meu!",
@@ -75,17 +86,6 @@ const products = [
     code: "PROD_005_KEYCHAIN_NAME",
   },
   {
-    id: "chaveiro-finha",
-    title: "Chaveiros Personalizados",
-    desc: "Entre em contato e peça o seu, acabei de criar o meu!",
-    price: "R$ 15",
-    badge: "Personalizado",
-    badgeBg: "bg-accent",
-    priceColor: "text-accent",
-    img: productKeychainFinha.url,
-    code: "PROD_006_KEYCHAIN_FINHA",
-  },
-  {
     id: "chaveiro-noah",
     title: "Chaveiros Personalizados",
     desc: "Entre em contato e peça o seu, acabei de criar o meu!",
@@ -95,17 +95,6 @@ const products = [
     priceColor: "text-accent",
     img: productKeychainNoah.url,
     code: "PROD_007_KEYCHAIN_NOAH",
-  },
-  {
-    id: "chaveiro-paolla",
-    title: "Chaveiros Personalizados",
-    desc: "Entre em contato e peça o seu, acabei de criar o meu!",
-    price: "R$ 15",
-    badge: "Personalizado",
-    badgeBg: "bg-accent",
-    priceColor: "text-accent",
-    img: productKeychainPaolla.url,
-    code: "PROD_008_KEYCHAIN_PAOLLA",
   },
 ];
 
