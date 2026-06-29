@@ -4,19 +4,10 @@ import productTrophy from "@/assets/taca-copa.jpg.asset.json";
 import productDino from "@/assets/snake.jpg.asset.json";
 import productCanarinhoV4 from "@/assets/chaveiro-taca-v4.jpg.asset.json";
 import productKeychainName from "@/assets/chaveiro-nome-guilherme.jpg.asset.json";
-import productKeychainNameAlt from "@/assets/chaveiro-nome.jpg.asset.json";
 import productKeychainFinha from "@/assets/chaveiro-finha.jpg.asset.json";
 import productKeychainNoah from "@/assets/chaveiro-noah.jpg.asset.json";
-import productKeychainNoah2 from "@/assets/chaveiro-noah-2.jpg.asset.json";
 import productKeychainPaolla from "@/assets/chaveiro-paolla.jpg.asset.json";
 import printProcess from "@/assets/print-process.jpg";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -73,23 +64,48 @@ const products = [
     code: "PROD_004_CANARINHO_FOFINHO",
   },
   {
-    id: "chaveiro-nome",
-    title: "Chaveiro Personalizado",
+    id: "chaveiro-guilherme",
+    title: "Chaveiro Guilherme",
     desc: "Entre em contato e peça o seu, acabei de criar o meu!",
     price: "R$ 15",
     badge: "Personalizado",
     badgeBg: "bg-accent",
     priceColor: "text-accent",
     img: productKeychainName.url,
-    images: [
-      productKeychainName.url,
-      productKeychainNameAlt.url,
-      productKeychainFinha.url,
-      productKeychainNoah.url,
-      productKeychainNoah2.url,
-      productKeychainPaolla.url,
-    ],
     code: "PROD_005_KEYCHAIN_NAME",
+  },
+  {
+    id: "chaveiro-finha",
+    title: "Chaveiro Finha",
+    desc: "Entre em contato e peça o seu, acabei de criar o meu!",
+    price: "R$ 15",
+    badge: "Personalizado",
+    badgeBg: "bg-accent",
+    priceColor: "text-accent",
+    img: productKeychainFinha.url,
+    code: "PROD_006_KEYCHAIN_FINHA",
+  },
+  {
+    id: "chaveiro-noah",
+    title: "Chaveiro Noah",
+    desc: "Entre em contato e peça o seu, acabei de criar o meu!",
+    price: "R$ 15",
+    badge: "Personalizado",
+    badgeBg: "bg-accent",
+    priceColor: "text-accent",
+    img: productKeychainNoah.url,
+    code: "PROD_007_KEYCHAIN_NOAH",
+  },
+  {
+    id: "chaveiro-paolla",
+    title: "Chaveiro Paolla",
+    desc: "Entre em contato e peça o seu, acabei de criar o meu!",
+    price: "R$ 15",
+    badge: "Personalizado",
+    badgeBg: "bg-accent",
+    priceColor: "text-accent",
+    img: productKeychainPaolla.url,
+    code: "PROD_008_KEYCHAIN_PAOLLA",
   },
 ];
 
@@ -210,7 +226,7 @@ function Index() {
                 </div>
               </div>
               <div className="font-mono text-[10px] uppercase tracking-widest text-foreground/40">
-                Filtrando 4 de 12 objetos ativos
+                Filtrando {products.length} de 12 objetos ativos
               </div>
             </div>
 
@@ -218,37 +234,14 @@ function Index() {
               {products.map((p) => (
                 <div key={p.id} className="group cursor-pointer">
                   <div className="relative aspect-[4/5] bg-stone-100 rounded-3xl overflow-hidden mb-6 transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2">
-                    {"images" in p && Array.isArray(p.images) && p.images.length > 1 ? (
-                      <Carousel className="w-full h-full">
-                        <CarouselContent className="h-full">
-                          {p.images.map((imgSrc, idx) => (
-                            <CarouselItem key={idx} className="h-full">
-                              <div className="w-full h-full">
-                                <img
-                                  src={imgSrc}
-                                  alt={`${p.title} - foto ${idx + 1}`}
-                                  width={800}
-                                  height={1000}
-                                  loading="lazy"
-                                  className="w-full h-full object-cover"
-                                />
-                              </div>
-                            </CarouselItem>
-                          ))}
-                        </CarouselContent>
-                        <CarouselPrevious className="left-2 top-1/2 -translate-y-1/2 size-8 border-none bg-background/80 hover:bg-background text-foreground" />
-                        <CarouselNext className="right-2 top-1/2 -translate-y-1/2 size-8 border-none bg-background/80 hover:bg-background text-foreground" />
-                      </Carousel>
-                    ) : (
-                      <img
-                        src={p.img}
-                        alt={p.title}
-                        width={800}
-                        height={1000}
-                        loading="lazy"
-                        className="w-full h-full object-cover"
-                      />
-                    )}
+                    <img
+                      src={p.img}
+                      alt={p.title}
+                      width={800}
+                      height={1000}
+                      loading="lazy"
+                      className="w-full h-full object-cover"
+                    />
                     <div
                       className={`absolute top-4 right-4 px-3 py-1 ${p.badgeBg} text-primary-foreground text-[10px] font-bold rounded-lg uppercase tracking-wider z-10`}
                     >
