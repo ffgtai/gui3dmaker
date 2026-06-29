@@ -76,7 +76,7 @@ const products = [
   },
   {
     id: "chaveiro-finha",
-    title: "Chaveiro Finha",
+    title: "Chaveiros Personalizados",
     desc: "Entre em contato e peça o seu, acabei de criar o meu!",
     price: "R$ 15",
     badge: "Personalizado",
