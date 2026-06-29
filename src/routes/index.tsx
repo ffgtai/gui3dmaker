@@ -4,19 +4,10 @@ import productTrophy from "@/assets/taca-copa.jpg.asset.json";
 import productDino from "@/assets/snake.jpg.asset.json";
 import productCanarinhoV4 from "@/assets/chaveiro-taca-v4.jpg.asset.json";
 import productKeychainName from "@/assets/chaveiro-nome-guilherme.jpg.asset.json";
-import productKeychainNameAlt from "@/assets/chaveiro-nome.jpg.asset.json";
 import productKeychainFinha from "@/assets/chaveiro-finha.jpg.asset.json";
 import productKeychainNoah from "@/assets/chaveiro-noah.jpg.asset.json";
-import productKeychainNoah2 from "@/assets/chaveiro-noah-2.jpg.asset.json";
 import productKeychainPaolla from "@/assets/chaveiro-paolla.jpg.asset.json";
 import printProcess from "@/assets/print-process.jpg";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 
 export const Route = createFileRoute("/")({
   head: () => ({
