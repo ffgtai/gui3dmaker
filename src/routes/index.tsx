@@ -98,7 +98,7 @@ const products = [
   },
   {
     id: "chaveiro-paolla",
-    title: "Chaveiro Paolla",
+    title: "Chaveiros Personalizados",
     desc: "Entre em contato e peça o seu, acabei de criar o meu!",
     price: "R$ 15",
     badge: "Personalizado",
