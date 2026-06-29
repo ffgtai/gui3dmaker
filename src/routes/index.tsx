@@ -5,6 +5,10 @@ import productDino from "@/assets/snake.jpg.asset.json";
 import productCanarinhoV4 from "@/assets/chaveiro-taca-v4.jpg.asset.json";
 import productKeychainName from "@/assets/chaveiro-nome-guilherme.jpg.asset.json";
 import productKeychainNameAlt from "@/assets/chaveiro-nome.jpg.asset.json";
+import productKeychainFinha from "@/assets/chaveiro-finha.jpg.asset.json";
+import productKeychainNoah from "@/assets/chaveiro-noah.jpg.asset.json";
+import productKeychainNoah2 from "@/assets/chaveiro-noah-2.jpg.asset.json";
+import productKeychainPaolla from "@/assets/chaveiro-paolla.jpg.asset.json";
 import printProcess from "@/assets/print-process.jpg";
 import {
   Carousel,
@@ -77,7 +81,14 @@ const products = [
     badgeBg: "bg-accent",
     priceColor: "text-accent",
     img: productKeychainName.url,
-    images: [productKeychainName.url, productKeychainNameAlt.url],
+    images: [
+      productKeychainName.url,
+      productKeychainNameAlt.url,
+      productKeychainFinha.url,
+      productKeychainNoah.url,
+      productKeychainNoah2.url,
+      productKeychainPaolla.url,
+    ],
     code: "PROD_005_KEYCHAIN_NAME",
   },
 ];
@@ -372,7 +383,7 @@ function Index() {
               meu WhatsApp.
             </p>
             <a
-              href="https://wa.me/5513997262626?text=Olá! Gostaria de saber mais sobre os serviços da Gui 3D Maker"
+              href="https://wa.me/5513997272626?text=Olá! Gostaria de saber mais sobre os serviços e produtos da Gui 3D Maker"
               target="_blank"
               rel="noopener noreferrer"
               className="relative inline-flex items-center gap-3 px-10 py-5 bg-card text-primary rounded-2xl font-extrabold text-xl hover:scale-105 transition-transform"
