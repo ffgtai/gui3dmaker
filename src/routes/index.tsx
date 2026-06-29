@@ -65,7 +65,7 @@ const products = [
   },
   {
     id: "chaveiro-guilherme",
-    title: "Chaveiro Guilherme",
+    title: "Chaveiros Personalizados",
     desc: "Entre em contato e peça o seu, acabei de criar o meu!",
     price: "R$ 15",
     badge: "Personalizado",
@@ -76,7 +76,7 @@ const products = [
   },
   {
     id: "chaveiro-finha",
-    title: "Chaveiro Finha",
+    title: "Chaveiros Personalizados",
     desc: "Entre em contato e peça o seu, acabei de criar o meu!",
     price: "R$ 15",
     badge: "Personalizado",
@@ -87,7 +87,7 @@ const products = [
   },
   {
     id: "chaveiro-noah",
-    title: "Chaveiro Noah",
+    title: "Chaveiros Personalizados",
     desc: "Entre em contato e peça o seu, acabei de criar o meu!",
     price: "R$ 15",
     badge: "Personalizado",
@@ -98,7 +98,7 @@ const products = [
   },
   {
     id: "chaveiro-paolla",
-    title: "Chaveiro Paolla",
+    title: "Chaveiros Personalizados",
     desc: "Entre em contato e peça o seu, acabei de criar o meu!",
     price: "R$ 15",
     badge: "Personalizado",
