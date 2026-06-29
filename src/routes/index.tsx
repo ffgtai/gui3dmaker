@@ -87,7 +87,7 @@ const products = [
   },
   {
     id: "chaveiro-noah",
-    title: "Chaveiro Noah",
+    title: "Chaveiros Personalizados",
     desc: "Entre em contato e peça o seu, acabei de criar o meu!",
     price: "R$ 15",
     badge: "Personalizado",
