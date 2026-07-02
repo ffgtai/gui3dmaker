@@ -29,12 +29,12 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-// WhatsApp number used for "combinar detalhes" before payment
+// WhatsApp number used for "combinar detalhes" antes de itens personalizados
 const WHATSAPP_NUMBER = "5513997272626";
 
-// Cole aqui o link de pagamento gerado no Mercado Pago (Cobrar > Link de pagamento)
-// para cada produto. Enquanto estiver null/vazio, o botão "Pagar Agora" some
-// e só aparece o botão do WhatsApp.
+// Produtos com isPersonalizado: true mostram só o botão "Combinar no WhatsApp".
+// Produtos com isPersonalizado: false mostram o botão "Comprar", que aponta pro
+// link de pagamento (Mercado Pago > Cobrar > Link de pagamento) colado em paymentLink.
 const products = [
   {
     id: "copa",
@@ -46,6 +46,7 @@ const products = [
     priceColor: "text-primary",
     img: productTrophy.url,
     code: "PROD_001_COPA",
+    isPersonalizado: false,
     paymentLink: null as string | null,
   },
   {
@@ -58,6 +59,7 @@ const products = [
     priceColor: "text-secondary",
     img: productDino.url,
     code: "PROD_002_DINO",
+    isPersonalizado: false,
     paymentLink: null as string | null,
   },
   {
@@ -70,6 +72,7 @@ const products = [
     priceColor: "text-primary",
     img: productCanarinhoV4.url,
     code: "PROD_004_CANARINHO_FOFINHO",
+    isPersonalizado: false,
     paymentLink: null as string | null,
   },
   {
@@ -82,6 +85,7 @@ const products = [
     priceColor: "text-accent",
     img: productKeychainPaolla.url,
     code: "PROD_008_KEYCHAIN_PAOLLA",
+    isPersonalizado: true,
     paymentLink: null as string | null,
   },
   {
@@ -94,6 +98,7 @@ const products = [
     priceColor: "text-accent",
     img: productKeychainName.url,
     code: "PROD_005_KEYCHAIN_NAME",
+    isPersonalizado: true,
     paymentLink: null as string | null,
   },
   {
@@ -106,6 +111,7 @@ const products = [
     priceColor: "text-accent",
     img: productKeychainNoah.url,
     code: "PROD_007_KEYCHAIN_NOAH",
+    isPersonalizado: true,
     paymentLink: null as string | null,
   },
 ];
@@ -259,7 +265,7 @@ function Index() {
                       </span>
                     </div>
                     <p className="text-sm text-foreground/60 mb-4">{p.desc}</p>
-                    <div className="flex flex-wrap gap-2">
+                    {p.isPersonalizado ? (
                       <a
                         href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
                           `Olá! Tenho interesse em: ${p.title} (${p.price}). Podemos combinar os detalhes?`,
@@ -267,22 +273,26 @@ function Index() {
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
-                        className="flex-1 text-center px-4 py-2.5 border-2 border-border rounded-xl text-sm font-bold hover:bg-foreground/5 transition-colors"
+                        className="block text-center px-4 py-2.5 border-2 border-border rounded-xl text-sm font-bold hover:bg-foreground/5 transition-colors"
                       >
                         Combinar no WhatsApp
                       </a>
-                      {p.paymentLink && (
-                        <a
-                          href={p.paymentLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          onClick={(e) => e.stopPropagation()}
-                          className="flex-1 text-center px-4 py-2.5 bg-primary text-primary-foreground rounded-xl text-sm font-bold hover:scale-[1.02] transition-transform"
-                        >
-                          Pagar Agora
-                        </a>
-                      )}
-                    </div>
+                    ) : (
+                      <a
+                        href={p.paymentLink ?? "#"}
+                        target={p.paymentLink ? "_blank" : undefined}
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        aria-disabled={!p.paymentLink}
+                        className={`block text-center px-4 py-2.5 rounded-xl text-sm font-bold transition-transform ${
+                          p.paymentLink
+                            ? "bg-primary text-primary-foreground hover:scale-[1.02]"
+                            : "bg-primary/40 text-primary-foreground/70 cursor-not-allowed"
+                        }`}
+                      >
+                        Comprar
+                      </a>
+                    )}
                   </div>
                 </div>
               ))}
