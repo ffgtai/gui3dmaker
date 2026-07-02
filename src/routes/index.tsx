@@ -29,6 +29,12 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+// WhatsApp number used for "combinar detalhes" before payment
+const WHATSAPP_NUMBER = "5513997272626";
+
+// Cole aqui o link de pagamento gerado no Mercado Pago (Cobrar > Link de pagamento)
+// para cada produto. Enquanto estiver null/vazio, o botão "Pagar Agora" some
+// e só aparece o botão do WhatsApp.
 const products = [
   {
     id: "copa",
@@ -40,6 +46,7 @@ const products = [
     priceColor: "text-primary",
     img: productTrophy.url,
     code: "PROD_001_COPA",
+    paymentLink: null as string | null,
   },
   {
     id: "dino",
@@ -51,6 +58,7 @@ const products = [
     priceColor: "text-secondary",
     img: productDino.url,
     code: "PROD_002_DINO",
+    paymentLink: null as string | null,
   },
   {
     id: "canarinho-fofinho",
@@ -62,6 +70,7 @@ const products = [
     priceColor: "text-primary",
     img: productCanarinhoV4.url,
     code: "PROD_004_CANARINHO_FOFINHO",
+    paymentLink: null as string | null,
   },
   {
     id: "chaveiro-paolla",
@@ -73,6 +82,7 @@ const products = [
     priceColor: "text-accent",
     img: productKeychainPaolla.url,
     code: "PROD_008_KEYCHAIN_PAOLLA",
+    paymentLink: null as string | null,
   },
   {
     id: "chaveiro-guilherme",
@@ -84,6 +94,7 @@ const products = [
     priceColor: "text-accent",
     img: productKeychainName.url,
     code: "PROD_005_KEYCHAIN_NAME",
+    paymentLink: null as string | null,
   },
   {
     id: "chaveiro-noah",
@@ -95,6 +106,7 @@ const products = [
     priceColor: "text-accent",
     img: productKeychainNoah.url,
     code: "PROD_007_KEYCHAIN_NOAH",
+    paymentLink: null as string | null,
   },
 ];
 
@@ -246,7 +258,31 @@ function Index() {
                         {p.price}
                       </span>
                     </div>
-                    <p className="text-sm text-foreground/60">{p.desc}</p>
+                    <p className="text-sm text-foreground/60 mb-4">{p.desc}</p>
+                    <div className="flex flex-wrap gap-2">
+                      <a
+                        href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+                          `Olá! Tenho interesse em: ${p.title} (${p.price}). Podemos combinar os detalhes?`,
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="flex-1 text-center px-4 py-2.5 border-2 border-border rounded-xl text-sm font-bold hover:bg-foreground/5 transition-colors"
+                      >
+                        Combinar no WhatsApp
+                      </a>
+                      {p.paymentLink && (
+                        <a
+                          href={p.paymentLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="flex-1 text-center px-4 py-2.5 bg-primary text-primary-foreground rounded-xl text-sm font-bold hover:scale-[1.02] transition-transform"
+                        >
+                          Pagar Agora
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               ))}
